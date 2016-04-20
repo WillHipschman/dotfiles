@@ -1,3 +1,33 @@
+"Key Maps
+let mapleader = ","
+
+"Normal Mode Key Maps
+noremap <leader>ev :vsplit $MYVIMRC<cr>
+noremap <leader>sv :source $MYVIMRC<cr>
+noremap _ o<esc>kk<cr>
+noremap + O<esc><cr>
+noremap - dd<esc>p
+noremap = dd<esc>kk<esc>p
+noremap <tab> 0i<tab><esc>
+noremap <space> bve 
+noremap <c-u> bveU<esc>
+noremap <leader>d dd
+noremap <leader>l dd
+
+"Visual Mode Key Maps 
+xnoremap <tab> 0i<tab><esc>
+
+"Insert Mode Key Maps
+inoremap <c-d> <esc>ddi
+inoremap <c-u> <esc>bveUi
+
+"Insert Mode Abbreviations
+iabbrev waht what
+iabbrev @@ willhi@uber.com
+iabbrev teh the
+iabbrev adn and
+iabbrev tehn then
+
 " Use the Solarized Dark theme
 set background=dark
 colorscheme solarized
@@ -13,7 +43,7 @@ set wildmenu
 set esckeys
 " Allow backspace in insert mode
 set backspace=indent,eol,start
-" Optimize for fast terminal connections
+"Optimize for fast terminal connections
 set ttyfast
 " Add the g flag to search/replace by default
 set gdefault
